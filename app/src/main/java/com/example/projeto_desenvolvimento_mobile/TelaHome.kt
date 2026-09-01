@@ -21,9 +21,9 @@ fun TelaHome() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFF2F2F2)) // Fundo cinza claro idêntico ao Figma
+            .background(Color(0xFFF2F2F2))
     ) {
-        // CABEÇALHO VERDE
+
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -40,7 +40,7 @@ fun TelaHome() {
                 fontWeight = FontWeight.Bold
             )
 
-            // Ícones do topo (Telefone, Megafone/Aviso, Perfil)
+
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 BotaoCirculoTopo()
                 BotaoCirculoTopo()
@@ -48,14 +48,14 @@ fun TelaHome() {
             }
         }
 
-        // CONTEÚDO ROLÁVEL
+
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(20.dp)
         ) {
-            // SEÇÃO: CARTÃO VIRTUAL
+
             item {
                 Text(
                     text = "Cartão Virtual",
@@ -65,7 +65,7 @@ fun TelaHome() {
                 )
                 Spacer(modifier = Modifier.height(10.dp))
 
-                // Cartão Cinza
+
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -101,7 +101,7 @@ fun TelaHome() {
                             fontWeight = FontWeight.Bold,
                             color = Color(0xFF1C1C1C)
                         )
-                        // Botão de copiar
+
                         Box(
                             modifier = Modifier
                                 .size(28.dp)
@@ -123,7 +123,7 @@ fun TelaHome() {
                     Spacer(modifier = Modifier.height(16.dp))
 
                     Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                        // Botão Verde com ícone de olho cortado simulado
+
                         Box(
                             modifier = Modifier
                                 .height(36.dp)
@@ -135,7 +135,7 @@ fun TelaHome() {
                             Box(modifier = Modifier.size(16.dp).background(Color.White))
                         }
 
-                        // Botão "GERAR TOKEN"
+
                         Box(
                             modifier = Modifier
                                 .height(36.dp)
@@ -155,7 +155,7 @@ fun TelaHome() {
                 }
             }
 
-            // SEÇÃO: FAVORITOS (Grade 3x2)
+
             item {
                 Text(
                     text = "Favoritos",
@@ -185,7 +185,7 @@ fun TelaHome() {
                 }
             }
 
-            // SEÇÃO: ACESSO RÁPIDO
+
             item {
                 Text(
                     text = "Acesso Rápido",
@@ -239,7 +239,7 @@ fun ItemFavorito(titulo: String, modifier: Modifier = Modifier) {
             .padding(vertical = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // Ícone de cubo do Figma simulado por formas
+
         Box(
             modifier = Modifier
                 .size(48.dp)
